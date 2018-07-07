@@ -51,6 +51,20 @@ contract iFaceToken is ERC20, Lockable, PermissionGroups {
         return _balances[who];
     }
 
+    function getFaceId(address who)
+    public
+    view
+    returns (string) {
+        return _faceID[who];
+    }
+    
+    function getFingerId(address who)
+    public
+    view
+    returns (string) {
+        return _fingerID[who];
+    }
+
     function transfer(address to, uint256 value)
     public
     isTokenTransfer
