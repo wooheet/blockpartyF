@@ -1,3 +1,5 @@
+pragma solidity 0.4.19;
+
 contract Lockable {
     bool public tokenTransfer;
     address public owner;

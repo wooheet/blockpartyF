@@ -1,3 +1,5 @@
+pragma solidity 0.4.19;
+
 contract iFaceToken is ERC20, Lockable, PermissionGroups {
 
     string public constant name = "iFaceToken";
